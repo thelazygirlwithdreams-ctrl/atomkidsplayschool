@@ -65,14 +65,12 @@ export function PopupForm() {
             
             <h3 className="font-display text-2xl font-bold mb-2">Hello there! 👋</h3>
             <p className="text-sm text-muted-foreground mb-6">Let us know how we can help your little one grow.</p>
-            {submitted ? (
-              <div className="text-center py-10 text-primary font-bold">
-                Thank you! We will get back to you shortly.
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label className="text-sm font-semibold block mb-1.5">Your Name</label>
+            <form action="https://formsubmit.co/kanchanamunu@gmail.com" method="POST" className="space-y-4">
+              <input type="hidden" name="_next" value="https://atomkidsplayschoolguduvanchery.in" />
+              <input type="hidden" name="_subject" value="New Website Enquiry" />
+              <input type="hidden" name="_captcha" value="false" />
+              <div>
+                <label className="text-sm font-semibold block mb-1.5">Your Name</label>
                   <input name="name" required placeholder="Parent's Name" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
                 </div>
                 <div>
@@ -97,7 +95,6 @@ export function PopupForm() {
                   <Send size={18} /> Send Enquiry
                 </button>
               </form>
-            )}
           </motion.div>
         </motion.div>
       )}

@@ -1,48 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone, MessageCircle } from "lucide-react";
-import { useState } from "react";
-import { z } from "zod";
-
-const schema = z.object({
-  name: z.string().trim().min(1, "Name required").max(100),
-  phone: z.string().trim().min(7, "Valid phone required").max(20),
-  age: z.string().trim().max(20),
-  message: z.string().trim().max(1000),
-});
 
 export function Contact() {
-  const [status, setStatus] = useState<string | null>(null);
-
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const result = schema.safeParse({
-      name: fd.get("name"), phone: fd.get("phone"), age: fd.get("age"), message: fd.get("message"),
-    });
-    if (!result.success) {
-      setStatus(result.error.issues[0].message);
-      return;
-    }
-    
-    // Send email via FormSubmit ajax
-    fetch("https://formsubmit.co/ajax/kanchanamunu@gmail.com", {
-      method: "POST",
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        name: result.data.name,
-        contact: result.data.phone,
-        age: result.data.age,
-        message: result.data.message,
-        _subject: `New Website Contact Form Message`
-      })
-    });
-
-    setStatus("Thank you! We'll get back to you very soon. 💛");
-    e.currentTarget.reset();
-  };
 
   return (
     <section id="contact" className="py-24 px-5">
@@ -93,11 +52,15 @@ export function Contact() {
             </div>
           </motion.div>
 
-          <motion.form
-            onSubmit={onSubmit}
-            initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
+          <form
+            action="https://formsubmit.co/kanchanamunu@gmail.com"
+            method="POST"
             className="rounded-4xl bg-card p-8 shadow-card space-y-4"
           >
+            <input type="hidden" name="_next" value="https://atomkidsplayschoolguduvanchery.in" />
+            <input type="hidden" name="_subject" value="New Website Contact Form Message" />
+            <input type="hidden" name="_captcha" value="false" />
+            
             <h3 className="font-display text-2xl font-bold">Send us a message</h3>
             <div className="grid sm:grid-cols-2 gap-4">
               <Field name="name" label="Your Name" placeholder="Parent's name" />
@@ -111,8 +74,7 @@ export function Contact() {
             <button type="submit" className="w-full rounded-full bg-primary text-primary-foreground py-4 font-bold shadow-soft hover:scale-[1.02] transition-transform">
               Send Message →
             </button>
-            {status && <p className="text-sm text-center text-foreground/80 pt-2">{status}</p>}
-          </motion.form>
+          </form>
         </div>
       </div>
 
