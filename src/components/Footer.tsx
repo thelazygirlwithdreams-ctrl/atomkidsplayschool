@@ -7,12 +7,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <div className="h-14 w-14 rounded-full bg-white grid place-items-center shadow-pop ring-2 ring-primary/40 overflow-hidden">
-              <img src={logo} alt="Atom Kids Play School logo" width={56} height={56} className="h-12 w-12 object-contain" />
+            <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-white grid place-items-center shadow-pop ring-2 ring-primary/40 overflow-hidden flex-shrink-0">
+              <img src={logo} alt="Atom Kids Play School logo" className="h-14 w-14 md:h-16 md:w-16 object-contain" />
             </div>
             <div>
-              <div className="font-display font-bold text-lg">Atom Kids Play School</div>
-              <div className="text-xs uppercase tracking-widest opacity-60">Urapakkam, Tamil Nadu</div>
+              <div className="font-display font-bold text-2xl md:text-3xl">Atom Kids Play School</div>
+              <div className="text-xs md:text-sm uppercase tracking-widest opacity-60">Urapakkam, Tamil Nadu</div>
             </div>
           </div>
           <p className="mt-5 text-sm opacity-70 max-w-md">

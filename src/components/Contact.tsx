@@ -23,6 +23,23 @@ export function Contact() {
       setStatus(result.error.issues[0].message);
       return;
     }
+    
+    // Send email via FormSubmit ajax
+    fetch("https://formsubmit.co/ajax/kanchanamunu@gmail.com", {
+      method: "POST",
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: result.data.name,
+        contact: result.data.phone,
+        age: result.data.age,
+        message: result.data.message,
+        _subject: `New Website Contact Form Message`
+      })
+    });
+
     setStatus("Thank you! We'll get back to you very soon. 💛");
     e.currentTarget.reset();
   };

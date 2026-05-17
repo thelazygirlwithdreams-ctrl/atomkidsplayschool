@@ -32,13 +32,13 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-7xl flex items-center justify-between px-5 py-4">
-        <a href="#home" className="flex items-center gap-2 group">
-          <div className="h-14 w-14 rounded-full bg-white shadow-pop ring-2 ring-primary/30 grid place-items-center overflow-hidden animate-float-soft">
-            <img src={logo} alt="Atom Kids Play School logo" width={56} height={56} className="h-12 w-12 object-contain" />
+        <a href="#home" className="flex items-center gap-3 group">
+          <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-white shadow-pop ring-2 ring-primary/30 grid place-items-center overflow-hidden animate-float-soft flex-shrink-0">
+            <img src={logo} alt="Atom Kids Play School logo" className="h-14 w-14 md:h-16 md:w-16 object-contain" />
           </div>
           <div className="leading-tight">
-            <div className="font-display font-bold text-lg text-foreground">Atom Kids</div>
-            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Play School</div>
+            <div className="font-display font-bold text-2xl md:text-3xl text-foreground">Atom Kids</div>
+            <div className="text-xs md:text-sm uppercase tracking-widest text-muted-foreground font-semibold">Play School</div>
           </div>
         </a>
 
