@@ -15,30 +15,6 @@ export function PopupForm() {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const data = Object.fromEntries(fd.entries());
-    
-    // Send email via FormSubmit ajax
-    fetch("https://formsubmit.co/ajax/kanchanamunu@gmail.com", {
-      method: "POST",
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        name: data.name,
-        contact: data.contact,
-        enquiry: data.enquiry,
-        _subject: `New Website Enquiry: ${data.enquiry}`
-      })
-    });
-
-    setSubmitted(true);
-    setTimeout(() => setIsOpen(false), 3000);
-  };
-
   if (!isOpen && !submitted) return null;
 
   return (
@@ -71,15 +47,15 @@ export function PopupForm() {
               <input type="hidden" name="_captcha" value="false" />
               <div>
                 <label className="text-sm font-semibold block mb-1.5">Your Name</label>
-                  <input name="name" required placeholder="Parent's Name" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+                  <input name="name" placeholder="Parent's Name" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
                 </div>
                 <div>
                   <label className="text-sm font-semibold block mb-1.5">Contact Number</label>
-                  <input name="contact" required type="tel" placeholder="+91" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+                  <input name="contact" type="tel" placeholder="+91" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
                 </div>
                 <div>
                   <label className="text-sm font-semibold block mb-1.5">Enquire About</label>
-                  <select name="enquiry" required defaultValue="" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none">
+                  <select name="enquiry" defaultValue="" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none">
                     <option value="" disabled>Select a program...</option>
                     <option value="Daycare">Daycare</option>
                     <option value="Pre-KG">Pre-KG</option>
