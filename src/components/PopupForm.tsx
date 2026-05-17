@@ -15,30 +15,7 @@ export function PopupForm() {
     return () => clearTimeout(timer);
   }, []);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const data = Object.fromEntries(fd.entries());
-    
-    // 1. Send email via FormSubmit ajax
-    fetch("https://formsubmit.co/ajax/kanchanamunu@gmail.com", {
-      method: "POST",
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        name: data.name,
-        contact: data.contact,
-        enquiry: data.enquiry,
-        _subject: `New Website Enquiry: ${data.enquiry}`
-      })
-    });
-
-    // 2. Trigger SMS app (works on mobile devices)
-    const smsText = `Hi, I am ${data.name}. My contact number is ${data.contact}. I would like to enquire about ${data.enquiry}.`;
-    window.location.href = `sms:9962358771?body=${encodeURIComponent(smsText)}`;
-    
+  const handleSubmit = () => {
     setSubmitted(true);
     setTimeout(() => setIsOpen(false), 3000);
   };
@@ -74,7 +51,9 @@ export function PopupForm() {
                 Thank you! We will get back to you shortly.
               </div>
             ) : (
-              <form onSubmit={onSubmit} className="space-y-4">
+              <form action="https://formsubmit.co/kanchanamunu@gmail.com" method="POST" target="_blank" onSubmit={handleSubmit} className="space-y-4">
+                <input type="hidden" name="_subject" value="New Website Enquiry" />
+                <input type="hidden" name="_captcha" value="false" />
                 <div>
                   <label className="text-sm font-semibold block mb-1.5">Your Name</label>
                   <input name="name" required placeholder="Parent's Name" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
