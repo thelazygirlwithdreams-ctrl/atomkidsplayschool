@@ -12,7 +12,7 @@ export function Footer() {
             </div>
             <div>
               <div className="font-display font-bold text-2xl md:text-3xl">Atom Kids Play School</div>
-              <div className="text-xs md:text-sm uppercase tracking-widest opacity-60">Urapakkam, Tamil Nadu</div>
+              <div className="text-xs md:text-sm uppercase tracking-widest opacity-60">Guduvanchery, Tamil Nadu</div>
             </div>
           </div>
           <p className="mt-5 text-sm opacity-70 max-w-md">
@@ -44,7 +44,7 @@ export function Footer() {
           <div className="font-display font-bold mb-4">Reach Us</div>
           <ul className="space-y-2 text-sm opacity-80">
             <li>464, Arul Nagar, MG Nagar 1A</li>
-            <li>Urapakkam - 603211</li>
+            <li>Guduvanchery - 603211</li>
             <li><a href="mailto:kanchanamunu@gmail.com" className="hover:text-primary">kanchanamunu@gmail.com</a></li>
             <li><a href="tel:+918610392184" className="hover:text-primary">+91 86103 92184</a></li>
             <li><a href="tel:+917904960286" className="hover:text-primary">+91 79049 60286</a></li>

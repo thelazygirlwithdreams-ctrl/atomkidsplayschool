@@ -22,7 +22,7 @@ export function Contact() {
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/30 text-coral"><MapPin /></div>
               <div>
                 <div className="font-display font-bold">Visit Us</div>
-                <p className="text-sm text-muted-foreground">464, Arul Nagar, MG Nagar 1A,<br />Urapakkam, Guduvancheri,<br />Tamil Nadu - 603211</p>
+                <p className="text-sm text-muted-foreground">464, Arul Nagar, MG Nagar 1A,<br />Guduvanchery,<br />Tamil Nadu - 603211</p>
               </div>
             </div>
             <div className="flex gap-4">

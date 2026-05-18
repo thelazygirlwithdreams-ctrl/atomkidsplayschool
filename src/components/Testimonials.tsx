@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const reviews = [
   { name: "Priya R.", role: "Parent of Aarav", text: "My son looks forward to school every single day! The teachers are like family. Atom Kids has been a blessing for our family." },
-  { name: "Karthik M.", role: "Parent of Diya", text: "Safe, clean, and incredibly caring. We can see Diya's confidence growing day by day. Highly recommended in Urapakkam." },
+  { name: "Karthik M.", role: "Parent of Diya", text: "Safe, clean, and incredibly caring. We can see Diya's confidence growing day by day. Highly recommended in Guduvanchery." },
   { name: "Lakshmi S.", role: "Parent of Vihaan", text: "The summer abacus program was amazing. Loving teachers, joyful environment — couldn't ask for more for our little one." },
   { name: "Anand K.", role: "Parent of Ira", text: "Beautiful classrooms, brilliant curriculum and the warmest staff. Our daughter has truly blossomed here." },
 ];

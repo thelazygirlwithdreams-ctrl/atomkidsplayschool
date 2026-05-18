@@ -23,7 +23,7 @@ export function About() {
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
             For over <strong className="text-foreground">seven wonderful years</strong>, Atom Kids Play School has been
-            a second home for hundreds of children in Urapakkam. We believe every child is unique — full of curiosity,
+            a second home for hundreds of children in Guduvanchery. We believe every child is unique — full of curiosity,
             kindness and infinite potential.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">

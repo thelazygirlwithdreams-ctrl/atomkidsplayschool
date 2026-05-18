@@ -30,10 +30,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Atom Kids Play School — Urapakkam | Daycare, Pre-KG, LKG, UKG" },
-      { name: "description", content: "Atom Kids Play School in Urapakkam offers daycare, Pre-KG, LKG, UKG, tuition and summer programs in a safe, joyful and nurturing environment. 7+ years of trusted early learning." },
+      { title: "Atom Kids Play School — Guduvanchery | Daycare, Pre-KG, LKG, UKG" },
+      { name: "description", content: "Atom Kids Play School in Guduvanchery offers daycare, Pre-KG, LKG, UKG, tuition and summer programs in a safe, joyful and nurturing environment. 7+ years of trusted early learning." },
       { property: "og:title", content: "Atom Kids Play School — A Safe & Happy Place to Learn and Grow" },
-      { property: "og:description", content: "Joyful learning, smart classrooms and a safe play area for your little one in Urapakkam, Tamil Nadu." },
+      { property: "og:description", content: "Joyful learning, smart classrooms and a safe play area for your little one in Guduvanchery, Tamil Nadu." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
