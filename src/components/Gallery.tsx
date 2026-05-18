@@ -92,13 +92,6 @@ export function Gallery() {
               transition={{ duration: 0.3 }}
               className="mt-10"
             >
-              <button
-                onClick={() => setActiveAlbum(null)}
-                className="mb-8 inline-flex items-center gap-2 text-sm font-bold bg-primary text-primary-foreground px-5 py-2.5 rounded-full hover:scale-105 transition-transform shadow-soft"
-              >
-                <ArrowLeft size={16} /> Back to Albums
-              </button>
-              
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {activeAlbum.images.map((img, i) => (
                   <motion.div
@@ -129,6 +122,15 @@ export function Gallery() {
                   <p className="text-sm mt-2 opacity-80">Update the <code>images</code> array in the Gallery component to display them.</p>
                 </div>
               )}
+
+              <div className="mt-12 flex justify-center">
+                <button
+                  onClick={() => setActiveAlbum(null)}
+                  className="inline-flex items-center gap-2 text-sm font-bold bg-primary text-primary-foreground px-7 py-3.5 rounded-full hover:scale-105 transition-transform shadow-soft"
+                >
+                  <ArrowLeft size={16} /> Back to Albums
+                </button>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
