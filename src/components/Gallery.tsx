@@ -1,21 +1,21 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, ArrowLeft, Image as ImageIcon, X } from "lucide-react";
-import ad1 from "@/assets/annual-day-1.jpeg"; import ad2 from "@/assets/annual-day-2.jpeg"; import ad3 from "@/assets/annual-day-3.jpeg"; import ad4 from "@/assets/annual-day-4.jpeg"; import ad5 from "@/assets/annual-day-5.jpeg";
+import ad1 from "@/assets/annual-day-1.jpeg"; import ad2 from "@/assets/annual-day-2.jpeg"; import ad3 from "@/assets/annual-day-3.jpeg"; import ad4 from "@/assets/annual-day-4.jpeg"; import ad5 from "@/assets/annual-day-5.jpeg"; import ad6 from "@/assets/annual-day-6.jpeg"; import ad7 from "@/assets/annual-day-7.jpeg"; import ad8 from "@/assets/annual-day-8.jpeg"; import ad9 from "@/assets/annual-day-9.jpeg"; import ad10 from "@/assets/annual-day-10.jpeg";
 import cd1 from "@/assets/colors-day-1.jpeg"; import cd2 from "@/assets/colors-day-2.jpeg"; import cd3 from "@/assets/colors-day-3.jpeg"; import cd4 from "@/assets/colors-day-4.jpeg"; import cd5 from "@/assets/colors-day-5.jpeg";
 import fd1 from "@/assets/fancy-dress-1.jpeg"; import fd2 from "@/assets/fancy-dress-2.jpeg"; import fd3 from "@/assets/fancy-dress-3.jpeg"; import fd4 from "@/assets/fancy-dress-4.jpeg"; import fd5 from "@/assets/fancy-dress-5.jpeg";
-import cb1 from "@/assets/celebrations-1.jpeg"; import cb2 from "@/assets/celebrations-2.jpeg"; import cb3 from "@/assets/celebrations-3.jpeg"; import cb4 from "@/assets/celebrations-4.jpeg"; import cb5 from "@/assets/celebrations-5.jpeg";
-import sd1 from "@/assets/sports-day-1.jpeg"; import sd2 from "@/assets/sports-day-2.jpeg"; import sd3 from "@/assets/sports-day-3.jpeg"; import sd4 from "@/assets/sports-day-4.jpeg"; import sd5 from "@/assets/sports-day-5.jpeg";
-import wa1 from "@/assets/weekly-activity-1.jpeg"; import wa2 from "@/assets/weekly-activity-2.jpeg"; import wa3 from "@/assets/weekly-activity-3.jpeg"; import wa4 from "@/assets/weekly-activity-4.jpeg"; import wa5 from "@/assets/weekly-activity-5.jpeg";
+import cb1 from "@/assets/celebrations-1.jpeg"; import cb2 from "@/assets/celebrations-2.jpeg"; import cb3 from "@/assets/celebrations-3.jpeg"; import cb4 from "@/assets/celebrations-4.jpeg"; import cb5 from "@/assets/celebrations-5.jpeg"; import cb6 from "@/assets/celebrations-6.jpeg"; import cb7 from "@/assets/celebrations-7.jpeg";
+import vj1 from "@/assets/vijayadashami-1.jpeg"; import vj2 from "@/assets/vijayadashami-2.jpeg"; import vj3 from "@/assets/vijayadashami-3.jpeg";
+import wa1 from "@/assets/weekly-activity-1.jpeg"; import wa2 from "@/assets/weekly-activity-2.jpeg"; import wa3 from "@/assets/weekly-activity-3.jpeg"; import wa4 from "@/assets/weekly-activity-4.jpeg"; import wa5 from "@/assets/weekly-activity-5.jpeg"; import wa6 from "@/assets/weekly-activity-6.jpeg"; import wa7 from "@/assets/weekly-activity-7.jpeg"; import wa8 from "@/assets/weekly-activity-8.jpeg";
 
 // The user can add up to 10 images into the `images` array for each category.
 const albums = [
-  { id: "annual-day", title: "Annual Day", cover: ad1, images: [ad1, ad2, ad3, ad4, ad5] },
+  { id: "annual-day", title: "Annual Day", cover: ad1, images: [ad1, ad2, ad3, ad4, ad5, ad6, ad7, ad8, ad9, ad10] },
   { id: "colors-day", title: "Colors Day", cover: cd1, images: [cd1, cd2, cd3, cd4, cd5] },
   { id: "fancy-dress", title: "Fancy Dress", cover: fd1, images: [fd1, fd2, fd3, fd4, fd5] },
-  { id: "celebrations", title: "Celebrations", cover: cb1, images: [cb1, cb2, cb3, cb4, cb5] },
-  { id: "sports-day", title: "Sports Day", cover: sd1, images: [sd1, sd2, sd3, sd4, sd5] },
-  { id: "weekly-activity", title: "Weekly Activity", cover: wa1, images: [wa1, wa2, wa3, wa4, wa5] },
+  { id: "celebrations", title: "Celebrations", cover: cb1, images: [cb1, cb2, cb3, cb4, cb5, cb6, cb7] },
+  { id: "vijayadashami", title: "Vijayadashami", cover: vj1, images: [vj1, vj2, vj3] },
+  { id: "weekly-activity", title: "Weekly Activity", cover: wa1, images: [wa1, wa2, wa3, wa4, wa5, wa6, wa7, wa8] },
 ];
 
 export function Gallery() {
@@ -94,7 +94,7 @@ export function Gallery() {
             >
               <button
                 onClick={() => setActiveAlbum(null)}
-                className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-foreground/70 hover:text-primary transition-colors"
+                className="mb-8 inline-flex items-center gap-2 text-sm font-bold bg-primary text-primary-foreground px-5 py-2.5 rounded-full hover:scale-105 transition-transform shadow-soft"
               >
                 <ArrowLeft size={16} /> Back to Albums
               </button>
