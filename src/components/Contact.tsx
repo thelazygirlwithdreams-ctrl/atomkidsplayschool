@@ -22,7 +22,7 @@ export function Contact() {
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/30 text-coral"><MapPin /></div>
               <div>
                 <div className="font-display font-bold">Visit Us</div>
-                <p className="text-sm text-muted-foreground">463, Arul Nagar, MG Nagar 1A,<br />Urapakkam, Guduvancheri,<br />Tamil Nadu - 603211</p>
+                <p className="text-sm text-muted-foreground">464, Arul Nagar, MG Nagar 1A,<br />Urapakkam, Guduvancheri,<br />Tamil Nadu - 603211</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -53,13 +53,14 @@ export function Contact() {
           </motion.div>
 
           <form
-            action="https://formsubmit.co/kanchanamunu@gmail.com"
+            action="https://api.web3forms.com/submit"
             method="POST"
             className="rounded-4xl bg-card p-8 shadow-card space-y-4"
           >
-            <input type="hidden" name="_next" value="https://atomkidsplayschoolguduvanchery.in" />
-            <input type="hidden" name="_subject" value="New Website Contact Form Message" />
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="access_key" value="d6ae201b-aaac-408c-915f-c75536fcd79d" />
+            <input type="hidden" name="redirect" value="https://atomkidsplayschoolguduvanchery.in" />
+            <input type="hidden" name="subject" value="New Website Contact Form Message" />
+            <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
             
             <h3 className="font-display text-2xl font-bold">Send us a message</h3>
             <div className="grid sm:grid-cols-2 gap-4">

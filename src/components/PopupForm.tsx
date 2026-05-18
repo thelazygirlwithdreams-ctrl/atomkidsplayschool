@@ -41,10 +41,11 @@ export function PopupForm() {
             
             <h3 className="font-display text-2xl font-bold mb-2">Hello there! 👋</h3>
             <p className="text-sm text-muted-foreground mb-6">Let us know how we can help your little one grow.</p>
-            <form action="https://formsubmit.co/kanchanamunu@gmail.com" method="POST" className="space-y-4">
-              <input type="hidden" name="_next" value="https://atomkidsplayschoolguduvanchery.in" />
-              <input type="hidden" name="_subject" value="New Website Enquiry" />
-              <input type="hidden" name="_captcha" value="false" />
+            <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
+              <input type="hidden" name="access_key" value="d6ae201b-aaac-408c-915f-c75536fcd79d" />
+              <input type="hidden" name="redirect" value="https://atomkidsplayschoolguduvanchery.in" />
+              <input type="hidden" name="subject" value="New Website Enquiry" />
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
               <div>
                 <label className="text-sm font-semibold block mb-1.5">Your Name</label>
                   <input name="name" placeholder="Parent's Name" className="w-full rounded-2xl bg-background border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />

@@ -33,7 +33,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
             className="mt-6 text-lg text-muted-foreground max-w-xl"
           >
-            At <strong className="text-foreground">Atom Kids Play School</strong> in Urapakkam, every little explorer
+            At <strong className="text-foreground">Atom Kids Play School</strong> in Guduvanchery, every little explorer
             discovers the joy of learning through play, creativity and care.
           </motion.p>
 

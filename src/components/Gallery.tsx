@@ -1,21 +1,21 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, ArrowLeft, Image as ImageIcon, X } from "lucide-react";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g7 from "@/assets/gallery-7.jpg";
+import ad1 from "@/assets/annual-day-1.jpeg"; import ad2 from "@/assets/annual-day-2.jpeg"; import ad3 from "@/assets/annual-day-3.jpeg"; import ad4 from "@/assets/annual-day-4.jpeg"; import ad5 from "@/assets/annual-day-5.jpeg";
+import cd1 from "@/assets/colors-day-1.jpeg"; import cd2 from "@/assets/colors-day-2.jpeg"; import cd3 from "@/assets/colors-day-3.jpeg"; import cd4 from "@/assets/colors-day-4.jpeg"; import cd5 from "@/assets/colors-day-5.jpeg";
+import fd1 from "@/assets/fancy-dress-1.jpeg"; import fd2 from "@/assets/fancy-dress-2.jpeg"; import fd3 from "@/assets/fancy-dress-3.jpeg"; import fd4 from "@/assets/fancy-dress-4.jpeg"; import fd5 from "@/assets/fancy-dress-5.jpeg";
+import cb1 from "@/assets/celebrations-1.jpeg"; import cb2 from "@/assets/celebrations-2.jpeg"; import cb3 from "@/assets/celebrations-3.jpeg"; import cb4 from "@/assets/celebrations-4.jpeg"; import cb5 from "@/assets/celebrations-5.jpeg";
+import sd1 from "@/assets/sports-day-1.jpeg"; import sd2 from "@/assets/sports-day-2.jpeg"; import sd3 from "@/assets/sports-day-3.jpeg"; import sd4 from "@/assets/sports-day-4.jpeg"; import sd5 from "@/assets/sports-day-5.jpeg";
+import wa1 from "@/assets/weekly-activity-1.jpeg"; import wa2 from "@/assets/weekly-activity-2.jpeg"; import wa3 from "@/assets/weekly-activity-3.jpeg"; import wa4 from "@/assets/weekly-activity-4.jpeg"; import wa5 from "@/assets/weekly-activity-5.jpeg";
 
 // The user can add up to 10 images into the `images` array for each category.
 const albums = [
-  { id: "annual-day", title: "Annual Day", cover: g1, images: [g1] },
-  { id: "colors-day", title: "Colors Day", cover: g2, images: [g2] },
-  { id: "fancy-dress", title: "Fancy Dress", cover: g3, images: [g3] },
-  { id: "celebrations", title: "Celebrations", cover: g7, images: [g7] },
-  { id: "sports-day", title: "Sports Day", cover: g4, images: [g4] },
-  { id: "weekly-activity", title: "Weekly Activity", cover: g5, images: [g5] },
+  { id: "annual-day", title: "Annual Day", cover: ad1, images: [ad1, ad2, ad3, ad4, ad5] },
+  { id: "colors-day", title: "Colors Day", cover: cd1, images: [cd1, cd2, cd3, cd4, cd5] },
+  { id: "fancy-dress", title: "Fancy Dress", cover: fd1, images: [fd1, fd2, fd3, fd4, fd5] },
+  { id: "celebrations", title: "Celebrations", cover: cb1, images: [cb1, cb2, cb3, cb4, cb5] },
+  { id: "sports-day", title: "Sports Day", cover: sd1, images: [sd1, sd2, sd3, sd4, sd5] },
+  { id: "weekly-activity", title: "Weekly Activity", cover: wa1, images: [wa1, wa2, wa3, wa4, wa5] },
 ];
 
 export function Gallery() {

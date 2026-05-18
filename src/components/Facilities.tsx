@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { ToyBrick, Camera, Sparkles, Building2 } from "lucide-react";
+import { ToyBrick, Camera, Sparkles, Building2, Heart } from "lucide-react";
 
 const facilities = [
   { icon: ToyBrick, title: "Safe Play Area", desc: "Soft, secure equipment for endless fun.", color: "text-coral" },
   { icon: Camera, title: "CCTV & Security", desc: "24×7 monitoring for total peace of mind.", color: "text-grape" },
+  { icon: Heart, title: "Love & Care", desc: "Warm, nurturing atmosphere that feels like home.", color: "text-primary" },
   { icon: Sparkles, title: "Hygienic Environment", desc: "Daily sanitization and clean spaces.", color: "text-mint" },
   { icon: Building2, title: "Child-Friendly Spaces", desc: "Bright, vibrant rooms designed for little ones.", color: "text-sunny" },
 ];

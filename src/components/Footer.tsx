@@ -43,7 +43,7 @@ export function Footer() {
         <div>
           <div className="font-display font-bold mb-4">Reach Us</div>
           <ul className="space-y-2 text-sm opacity-80">
-            <li>463, Arul Nagar, MG Nagar 1A</li>
+            <li>464, Arul Nagar, MG Nagar 1A</li>
             <li>Urapakkam - 603211</li>
             <li><a href="mailto:kanchanamunu@gmail.com" className="hover:text-primary">kanchanamunu@gmail.com</a></li>
             <li><a href="tel:+918610392184" className="hover:text-primary">+91 86103 92184</a></li>

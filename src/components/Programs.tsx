@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
-import { Baby, BookOpen, GraduationCap, Sun } from "lucide-react";
+import { Baby, BookOpen, GraduationCap, Sun, Smile } from "lucide-react";
 
 const programs = [
   {
-    icon: Baby, bg: "bg-coral", title: "Daycare", age: "1.5 – 5 yrs",
+    icon: Smile, bg: "bg-mint", title: "Playgroup", age: "2.5 – 6 yrs",
+    benefits: ["Sensory play", "Social skills", "Early learning"],
+  },
+  {
+    icon: Baby, bg: "bg-coral", title: "Daycare", age: "1.5 – 6 yrs",
     benefits: ["Full / Half day care", "Nap time & play"],
   },
   {
@@ -11,12 +15,12 @@ const programs = [
     benefits: ["Phonics & numeracy", "Creative arts", "Social skills"],
   },
   {
-    icon: GraduationCap, bg: "bg-mint", title: "Tuition Classes", age: "Class 1 – 8",
+    icon: GraduationCap, bg: "bg-sunny", title: "Tuition Classes", age: "Class 1 – 8",
     benefits: ["Concept clarity", "Homework help", "Small batches"],
   },
   {
-    icon: Sun, bg: "bg-sunny", title: "Summer Programs", age: "All ages",
-    benefits: ["Abacus", "Rubik's Cube", "Vedic Maths"],
+    icon: Sun, bg: "bg-primary", title: "Summer Classes", age: "3 - 15 yrs",
+    benefits: ["Drawing & Handwriting", "Tamil Writing", "Rubik's Cube", "Abacus", "Vedic Maths"],
   },
 ];
 

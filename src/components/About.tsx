@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Shield, Smile, Star, Quote, GraduationCap, Award } from "lucide-react";
 import principalImg from "@/assets/principal.jpg";
+import groupImg from "@/assets/gallery-10.jpeg";
 
 const features = [
   { icon: Shield, color: "bg-mint/40 text-foreground", title: "Safe Environment", desc: "CCTV monitored campus with trained, caring staff." },
@@ -127,6 +128,54 @@ export function About() {
                 <div className="text-xs uppercase tracking-wider text-muted-foreground font-semibold">Heart & Dedication</div>
               </div>
             </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Teachers section */}
+      <div className="mx-auto max-w-7xl mt-24">
+        <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-[2.5rem] p-6 md:p-10 shadow-pop">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
+            className="relative"
+          >
+            <div className="absolute -inset-3 bg-rainbow blob opacity-60 blur-2xl" />
+            <img
+              src={groupImg}
+              alt="Happy children at Atom Kids Play School"
+              width={768}
+              height={512}
+              loading="lazy"
+              className="relative w-full rounded-[2rem] object-cover shadow-soft aspect-[4/3]"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
+          >
+            <span className="text-xs uppercase tracking-[0.25em] font-bold text-primary">Our Educators</span>
+            <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">
+              Guided by <span className="text-rainbow">loving hands</span>
+            </h2>
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+              Our teachers are more than educators; they are mentors, caregivers, and friends to your little ones.
+              Every teacher is highly experienced and Montessori qualified, bringing warmth, patience, and 
+              expertise to the classroom.
+            </p>
+            <ul className="mt-6 space-y-4">
+              <li className="flex items-start gap-3">
+                <div className="mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
+                <span className="text-foreground/90">Highly experienced in early childhood education.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="mt-1 h-2 w-2 rounded-full bg-coral flex-shrink-0" />
+                <span className="text-foreground/90">Certified and trained in the Montessori method.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="mt-1 h-2 w-2 rounded-full bg-mint flex-shrink-0" />
+                <span className="text-foreground/90">Dedicated to nurturing each child's unique potential.</span>
+              </li>
+            </ul>
           </motion.div>
         </div>
       </div>
