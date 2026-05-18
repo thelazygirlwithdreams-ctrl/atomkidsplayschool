@@ -1,18 +1,14 @@
 import { motion } from "framer-motion";
-import { Baby, BookOpen, GraduationCap, Sun, Smile } from "lucide-react";
+import { Baby, BookOpen, GraduationCap, Sun } from "lucide-react";
 
 const programs = [
-  {
-    icon: Smile, bg: "bg-mint", title: "Playgroup", age: "2.5 – 6 yrs",
-    benefits: ["Sensory play", "Social skills", "Early learning"],
-  },
   {
     icon: Baby, bg: "bg-coral", title: "Daycare", age: "1.5 – 6 yrs",
     benefits: ["Full / Half day care", "Nap time & play"],
   },
   {
-    icon: BookOpen, bg: "bg-sky", title: "Pre-KG • LKG • UKG", age: "2.5 – 5 yrs",
-    benefits: ["Phonics & numeracy", "Creative arts", "Social skills"],
+    icon: BookOpen, bg: "bg-sky", title: "Playgroup • Pre-KG • LKG • UKG", age: "2.5 – 6 yrs",
+    benefits: ["Sensory play", "Phonics & numeracy", "Creative arts", "Social skills"],
   },
   {
     icon: GraduationCap, bg: "bg-sunny", title: "Tuition Classes", age: "Class 1 – 8",
